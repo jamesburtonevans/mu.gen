@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tone": "^15.1.22"
+  },
+  "scripts": {
+    "dev": "node scripts.js"
+  }
+}
