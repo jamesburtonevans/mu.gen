@@ -1,0 +1,1 @@
+export const testSynth = new Tone.Synth();

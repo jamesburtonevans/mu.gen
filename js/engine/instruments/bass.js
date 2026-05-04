@@ -1,0 +1,1 @@
+export const bassSynth = new Tone.Synth();
