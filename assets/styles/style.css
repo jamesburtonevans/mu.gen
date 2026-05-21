@@ -322,6 +322,7 @@ input[type="range"] {
     background: var(--color-main-dd);
     border-radius: 1rem;
     box-shadow: inset 0 0 var(--shadow-blur) var(--shadow-color);
+    accent-color: var(--color-main-l);
 }
 
 input[type="range"]:focus {
