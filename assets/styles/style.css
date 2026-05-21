@@ -210,7 +210,6 @@ main {
     height: 4rem;
     background-color: transparent;
     border: none;
-    transform: scaleX(-1);
     cursor: pointer;
     font-size: 2rem;
     color: var(--color-main-ll);
