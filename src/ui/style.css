@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #b4afaa;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  max-width: 28rem;
+  padding: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1.2rem;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button {
+  font: inherit;
+  padding: 5px 5px;
+  border: 0;
+  border-radius: 5px;
+  background: #FFF;
+  color: #000;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.actions .inline {
+  margin: 0 0 0 auto;
+}
+
+.axis {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.axis input {
+  grid-column: 1 / -1;
+}
+
+.axis-ends {
+  opacity: 0.6;
+  font-size: 0.85em;
+}
+
+details {
+  margin-top: 1.5rem;
+}
+
+select,
+input[type="number"] {
+  font: inherit;
+  margin-left: 0.5rem;
+}

@@ -1,5 +1,13 @@
 {
   "dependencies": {
-    "tone": "^15.1.22"
+    "tone": "^15.1.22",
+    "standardized-audio-context": "^25.3.70"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build"
   }
 }
