@@ -27,3 +27,38 @@ button {
   background: #FFF;
   color: #000;
 }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.actions .inline {
+  margin: 0 0 0 auto;
+}
+
+.axis {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.axis input {
+  grid-column: 1 / -1;
+}
+
+.axis-ends {
+  opacity: 0.6;
+  font-size: 0.85em;
+}
+
+details {
+  margin-top: 1.5rem;
+}
+
+select,
+input[type="number"] {
+  font: inherit;
+  margin-left: 0.5rem;
+}
