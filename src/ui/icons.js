@@ -1,0 +1,21 @@
+import play from "./icons/play-fill.svg?raw";
+import pause from "./icons/pause-fill.svg?raw";
+import refresh from "./icons/arrows-clockwise-fill.svg?raw";
+import moon from "./icons/moon-fill.svg?raw";
+import layers from "./icons/music-notes-plus-fill.svg?raw";
+import volume from "./icons/speaker-high-fill.svg?raw";
+import focus from "./icons/target.svg?raw";
+import moonStar from "./icons/moon-star.svg?raw";
+import leaf from "./icons/leaf.svg?raw";
+import flower from "./icons/flower-2.svg?raw";
+import sunrise from "./icons/sunrise.svg?raw";
+import zap from "./icons/zap.svg?raw";
+import cloudMoon from "./icons/cloud-moon.svg?raw";
+import waves from "./icons/waves.svg?raw";
+import plus from "./icons/plus.svg?raw";
+import sparkles from "./icons/sparkles.svg?raw";
+import close from "./icons/x.svg?raw";
+import chevron from "./icons/chevron-down.svg?raw";
+import edit from "./icons/sliders-horizontal-fill.svg?raw";
+
+export const icons = { play, pause, refresh, moon, layers, volume, focus, moonStar, leaf, flower, sunrise, zap, cloudMoon, waves, plus, sparkles, close, chevron, edit };

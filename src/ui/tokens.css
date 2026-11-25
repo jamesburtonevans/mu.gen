@@ -1,0 +1,155 @@
+/* mirrors the Figma variables: names are each variable's web code syntax. change a value in Figma, then here */
+
+:root {
+  /* primitives */
+  --neutral-0: #000000;
+  --neutral-50: #0a0a0a;
+  --neutral-100: #121212;
+  --neutral-200: #1e1e1e;
+  --neutral-300: #2f2f2f;
+  --neutral-400: #4d4d4d;
+  --neutral-500: #6c6966;
+  --neutral-600: #928d89;
+  --neutral-700: #b4afaa;
+  --neutral-800: #d6d2ce;
+  --neutral-1000: #ffffff;
+
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --radius-0: 0px;
+  --radius-1: 5px;
+  --radius-2: 8px;
+  --radius-3: 12px;
+  --radius-full: 999px;
+
+  --border-0: 0px;
+  --border-1: 1px;
+  --border-2: 2px;
+
+  /* opacity tokens are percentages, as in Figma. use calc(var(--opacity-disabled) / 100) */
+  --emotion-dark: #2b2540;
+  --emotion-sad: #1f3350;
+  --emotion-nostalgic: #5a4632;
+  --emotion-tender: #5a3a48;
+  --emotion-peaceful: #24504a;
+  --emotion-dreamy: #3d3a66;
+  --emotion-hopeful: #5a5230;
+  --emotion-happy: #6b4a1f;
+
+  --opacity-40: 40;
+  --opacity-60: 60;
+  --opacity-100: 100;
+
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-family-sans: system-ui, sans-serif;
+  --font-family-serif: Spectral, Georgia, serif;
+
+  /* color */
+  --color-bg-page: var(--neutral-0);
+  --color-bg-surface: var(--neutral-100);
+  --color-bg-inset: var(--neutral-50);
+  --color-bg-control: var(--neutral-200);
+  --color-bg-control-hover: var(--neutral-300);
+  --color-bg-track: var(--neutral-300);
+  --color-text-default: var(--neutral-700);
+  --color-text-muted: var(--neutral-500);
+  --color-text-disabled: var(--neutral-600);
+  --color-text-inverse: var(--neutral-0);
+  --color-text-notice: var(--neutral-700);
+  --color-action-primary-bg: var(--neutral-1000);
+  --color-action-primary-bg-hover: var(--neutral-800);
+  --color-action-primary-bg-pressed: var(--neutral-700);
+  --color-action-primary-bg-disabled: var(--neutral-400);
+  --color-action-primary-text: var(--neutral-0);
+  --color-action-primary-text-disabled: var(--neutral-600);
+  --color-border-default: var(--neutral-400);
+  --color-border-subtle: var(--neutral-200);
+  --color-border-strong: var(--neutral-600);
+  --color-border-focus: var(--neutral-1000);
+  --color-control-fill: var(--neutral-1000);
+  --color-control-on-fill: var(--neutral-0);
+  --color-emotion-dark: var(--emotion-dark);
+  --color-emotion-sad: var(--emotion-sad);
+  --color-emotion-nostalgic: var(--emotion-nostalgic);
+  --color-emotion-tender: var(--emotion-tender);
+  --color-emotion-peaceful: var(--emotion-peaceful);
+  --color-emotion-dreamy: var(--emotion-dreamy);
+  --color-emotion-hopeful: var(--emotion-hopeful);
+  --color-emotion-happy: var(--emotion-happy);
+
+  /* space and size */
+  --space-gap-tight: var(--space-1);
+  --space-gap-default: var(--space-2);
+  --space-gap-relaxed: var(--space-3);
+  --space-stack-section: var(--space-5);
+  --space-stack-block: var(--space-6);
+  --space-control-padding-x: var(--space-2);
+  --space-control-padding-y: var(--space-1);
+  --space-page-padding: var(--space-6);
+  --space-sheet-padding-x: var(--space-8);
+  --space-sheet-padding-bottom: var(--space-12);
+  --size-icon: 16px;
+  --size-icon-lg: 24px;
+  --size-checkbox: 16px;
+  --size-slider-track: 4px;
+  --size-slider-thumb: 20px;
+  --size-slider-thumb-width: 6px;
+  --size-slider-compact: 72px;
+  --size-hero: 280px;
+  --size-icon-xl: 96px;
+  --size-icon-play: 40px;
+  --size-sheet-max-height: 640px;
+  --size-menu-width: 320px;
+  --size-control-min-height: 28px;
+  --size-control-min-width: 120px;
+
+  /* shape */
+  --radius-control: var(--radius-full);
+  --radius-checkbox: var(--radius-1);
+  --radius-panel: var(--radius-2);
+  --radius-track: var(--radius-full);
+  --radius-thumb: var(--radius-full);
+  --border-width-none: var(--border-0);
+  --border-width-default: var(--border-1);
+  --border-width-focus: var(--border-2);
+  --opacity-disabled: var(--opacity-40);
+  --opacity-opaque: var(--opacity-100);
+
+  /* type */
+  --type-family-body: var(--font-family-serif);
+  --type-weight-regular: var(--font-weight-regular);
+  --type-weight-bold: var(--font-weight-bold);
+  --type-size-body: var(--font-size-16);
+  --type-size-control: var(--font-size-16);
+  --type-size-small: var(--font-size-14);
+
+  /* responsive: Mobile values, Desktop below */
+  --responsive-page-padding: var(--space-4);
+  --responsive-section-gap: var(--space-4);
+  --responsive-content-max-width: 448px;
+  --responsive-title-size: var(--font-size-24);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --responsive-page-padding: var(--space-6);
+    --responsive-section-gap: var(--space-5);
+    --responsive-title-size: var(--font-size-32);
+  }
+}
