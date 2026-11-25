@@ -21,3 +21,5 @@ export const MODE_LABELS = {
 export const SLEEP_OPTIONS = [
   [0, "Off"], [5, "5 minutes"], [15, "15 minutes"], [30, "30 minutes"], [45, "45 minutes"], [60, "1 hour"], [90, "1.5 hours"], [120, "2 hours"],
 ];
+
+export const PRESET_NAME_MAX = 8;

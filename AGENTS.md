@@ -1,6 +1,6 @@
 # mu.gen
 
-Free, open-source (GPLv3) generative music app: endless, calm music for focus, sleep, relaxing and meditating, composed and synthesised live in the browser from a seed and ten user controls. No AI or trained model: composition is rule-based and all randomness comes from a seeded generator. It runs on the web now; iOS and Android via Capacitor are planned (not set up).
+Free, open-source (GPLv3) generative music app: endless, calm music for focus, sleep, relaxing and meditating, composed and synthesised live in the browser from a seed and ten user controls. No AI or trained model: composition is rule-based and all randomness comes from a seeded generator. It is a web app only; phones use it through the browser (Safari, Chrome, or a home-screen web app).
 
 ## Commands
 
@@ -14,9 +14,9 @@ Stack: Vite, vanilla JS ES modules, no UI framework. Tone.js from npm (`import *
 
 ```
 main.js          wires everything; the only file that imports engine, platform and ui together
-engine/          audio and music, no DOM, no Capacitor, never imports ui/
+engine/          audio and music, no DOM, never imports ui/
 ui/              DOM rendering and input; talks to the engine only via the store and commands from main.js
-platform/        browser/native services (output element, Media Session, storage); the only place for Capacitor code
+platform/        browser services (output element, Media Session, storage)
 ```
 
 | File | Role |
@@ -116,7 +116,7 @@ Mobile background audio is the main technical risk: webviews can suspend audio a
 - In-app pause leaves the `<audio>` element playing silence (stopping and restarting it clicks). A pause from Control Center or the lock screen also pauses the element after the fade, because iOS derives its playing state from the element.
 - Interruptions (calls, Siri, other apps) count as a pause: context `statechange`, the element's `pause` event, Media Session actions, and returning to a visible page with a non-running context. If the context will not run on the next Play, the page reloads (settings persist).
 - Stop happens only via the sleep timer (fades over the last minute) and on errors.
-- Fallback if background playback does not hold: render in chunks with `Tone.Offline` and play through an `<audio>` element or native player.
+- Fallback if background playback does not hold: render in chunks with `Tone.Offline` and play through an `<audio>` element.
 
 ## Conventions
 
@@ -144,8 +144,8 @@ You usually cannot listen, so verify by measurement and say plainly that the sou
 
 ## Known gaps
 
-- Not verified: lock-screen playback with the current engine, Android, and behaviour inside the Capacitor shell. An early iOS Safari test (older, simpler engine) held for about 15 minutes; raise `COMMIT_S` if gaps appear on a device.
-- Possible clipping or harshness on the iPhone speaker (earbuds fine) is unresolved and deferred to the native iOS work. Levels are at normal loudness now, untested on the device.
+- Not verified: lock-screen playback with the current engine, and Android browsers. An early iOS Safari test (older, simpler engine) held for about 15 minutes; raise `COMMIT_S` if gaps appear on a device.
+- Possible clipping or harshness on the iPhone speaker (earbuds fine) is unresolved and deferred. Levels are at normal loudness now, untested on the device.
 - CPU and battery on real phones are unmeasured; the numbers above are from a desktop.
 - No accounts; presets are local only.
 
